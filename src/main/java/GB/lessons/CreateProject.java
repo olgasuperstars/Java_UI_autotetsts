@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
  * Hello world!
  *
  */
-public class App
+public class CreateProject
 {
 
     public static void main(String[] args ) throws InterruptedException {
