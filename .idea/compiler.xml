@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lessons-ui-autotests" target="8" />
+      <module name="lessons-ui-autotests" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
