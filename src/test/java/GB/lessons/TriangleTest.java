@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class CreateProjectTest
+public class TriangleTest
 {
     @Test
     void egyptTriangleThenSuccessPerimeterTest() {
