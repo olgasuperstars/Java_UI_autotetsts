@@ -41,7 +41,7 @@ public class Triangle {
 
     public double calcArea() {
         double halfPerimeter = calculatePerimeter() / 2;
-        return Math.sqrt(halfPerimeter*(halfPerimeter-a)*(halfPerimeter-b)*halfPerimeter-c);
+        return Math.sqrt(halfPerimeter*(halfPerimeter-a)*(halfPerimeter-b)*(halfPerimeter-c));
 
     }
 
