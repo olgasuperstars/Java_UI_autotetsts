@@ -20,7 +20,7 @@ public class LogoutCustomer {
         webDriver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account");
 
         webDriver.findElement(By.xpath("//button[(text()='Logout')]")).click();
-       
+
         webDriver.findElement(By.xpath("//button[(text()='Home')]")).click();
 
         Thread.sleep(5000);
