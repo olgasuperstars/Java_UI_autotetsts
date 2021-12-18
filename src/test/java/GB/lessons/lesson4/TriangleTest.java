@@ -1,4 +1,4 @@
-package GB.lessons;
+package GB.lessons.lesson4;
 
 import GB.lessons.lesson4.Triangle;
 import org.junit.jupiter.api.Assertions;
