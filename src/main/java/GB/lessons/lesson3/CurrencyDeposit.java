@@ -19,14 +19,19 @@ public class CurrencyDeposit {
         WebDriver webDriver = WebDriverManager.chromedriver().create();
 
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        webDriver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account");
+        webDriver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
+        webDriver.findElement(By.xpath("//button[contains(text(), 'Customer Login')]")).click();
+        webDriver.findElement(By.xpath("//option[text()]")).click();
+        webDriver.findElement(By.xpath("//option[text()='Harry Potter']")).click();
+        webDriver.findElement(By.xpath("//button[text()='Login']")).click();
+
         webDriver.findElement(By.xpath("//select")).click();
         webDriver.findElement(By.xpath("//option[text()='1004']")).click();
         webDriver.findElement(By.xpath("//button[@ng-click='deposit()']")).click();
         webDriver.findElement(By.xpath("//input[@placeholder='amount']")).sendKeys("1000");
         webDriver.findElement(By.xpath("//button[(text()='Deposit')]")).click();
 
-        Thread.sleep(5000);
+        Thread.sleep(10000);
 
         webDriver.quit();
 
