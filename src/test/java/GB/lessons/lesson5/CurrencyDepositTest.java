@@ -6,9 +6,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class CurrencyDepositTest extends BasicTest {
 
@@ -23,7 +26,11 @@ public class CurrencyDepositTest extends BasicTest {
         webDriver.findElement(By.xpath("//select")).click();
         webDriver.findElement(By.xpath("//option[text()='1004']")).click();
         webDriver.findElement(By.xpath("//button[@ng-click='deposit()']")).click();
-        webDriver.findElement(By.xpath("//input[@placeholder='amount']")).sendKeys("1000");
+        webDriver.findElement(By.xpath("//input[@placeholder='amount']")).sendKeys("5000");
         webDriver.findElement(By.xpath("//button[(text()='Deposit')]")).click();
+
+        WebElement elements = webDriver.findElement(By.xpath("//span[text()='Deposit Successful']"));
+
+        assertThat(elements.getText()).isEqualTo("Deposit Successful");
     }
 }
