@@ -9,13 +9,4 @@ public class BaseView {
     public BaseView(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
-
-    public void deposit() {
-    }
-
-    public void logout() {
-    }
-
-    public void withdraw() {
-    }
 }
