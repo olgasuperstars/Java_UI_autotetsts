@@ -18,6 +18,7 @@
     <maven.compiler.target>1.7</maven.compiler.target>
     <junit.version>5.7.2</junit.version>
     <aspectj.version>1.9.6</aspectj.version>
+    <allure.version>2.17.0</allure.version>
   </properties>
 
   <dependencies>
@@ -81,7 +82,7 @@
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-junit5</artifactId>
-      <version>2.17.0</version>
+      <version>${allure.version}</version>
       <scope>test</scope>
     </dependency>
 
@@ -119,7 +120,7 @@
         <artifactId>allure-maven</artifactId>
         <version>2.10.0</version>
         <configuration>
-          <reportVersion>2.4.1</reportVersion>
+          <reportVersion>${allure.version}</reportVersion>
         </configuration>
       </plugin>
       <plugin>
