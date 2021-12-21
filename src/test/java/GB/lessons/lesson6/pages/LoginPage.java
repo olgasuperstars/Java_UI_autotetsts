@@ -1,6 +1,7 @@
 package GB.lessons.lesson6.pages;
 
 import GB.lessons.lesson5.BasicTest;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -10,6 +11,7 @@ public class LoginPage extends BaseView{
         super(webDriver);
     }
 
+    @Step("Авторизоваться на сайте")
     public HarryPotterPage login (){
 
         webDriver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
